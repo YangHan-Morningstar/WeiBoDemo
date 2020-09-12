@@ -92,7 +92,6 @@
 		EA206A5F2506323100C10055 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA206A0C2506323000C10055 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */; };
 		EA206A612506886400C10055 /* PostVIPBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206A602506886400C10055 /* PostVIPBadge.swift */; };
 		EA206A6425070DFB00C10055 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206A6325070DFB00C10055 /* Post.swift */; };
-		EA206A67250713C900C10055 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206A66250713C900C10055 /* PostViewModel.swift */; };
 		EA206A692507737000C10055 /* PostCellToolBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206A682507737000C10055 /* PostCellToolBarButton.swift */; };
 		EA206A6B250778A800C10055 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206A6A250778A800C10055 /* PostListView.swift */; };
 		EA206A6D25078E7800C10055 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206A6C25078E7800C10055 /* PostImageCell.swift */; };
@@ -109,6 +108,9 @@
 		EAC0AA5E250CC1F400CD11C3 /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */; };
 		EAC0AA60250CFD9800CD11C3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA5F250CFD9800CD11C3 /* UserData.swift */; };
 		EAC0AA64250D095700CD11C3 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA63250D095700CD11C3 /* PostDetailView.swift */; };
+		EAC0AA67250D0AEE00CD11C3 /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA66250D0AEE00CD11C3 /* CommentInputView.swift */; };
+		EAC0AA69250D0EF100CD11C3 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */; };
+		EAC0AA6B250D179B00CD11C3 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,7 +199,6 @@
 		EA206A0C2506323000C10055 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005tnxzUly8gab4i2r73xj30u00u0js8.jpg; sourceTree = "<group>"; };
 		EA206A602506886400C10055 /* PostVIPBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVIPBadge.swift; sourceTree = "<group>"; };
 		EA206A6325070DFB00C10055 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		EA206A66250713C900C10055 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		EA206A682507737000C10055 /* PostCellToolBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolBarButton.swift; sourceTree = "<group>"; };
 		EA206A6A250778A800C10055 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		EA206A6C25078E7800C10055 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
@@ -216,6 +217,9 @@
 		EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		EAC0AA5F250CFD9800CD11C3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		EAC0AA63250D095700CD11C3 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		EAC0AA66250D0AEE00CD11C3 /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
+		EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +334,6 @@
 		EA206A6525070E9700C10055 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EA206A66250713C900C10055 /* PostViewModel.swift */,
 				EAC0AA5F250CFD9800CD11C3 /* UserData.swift */,
 			);
 			path = ViewModels;
@@ -339,6 +342,7 @@
 		EA206A6E2507913300C10055 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				EAC0AA65250D0ACB00CD11C3 /* Comment */,
 				EAC0AA62250D094500CD11C3 /* Detail */,
 				EA61FCF424EBA07D00C178BD /* PostCell.swift */,
 				EA206A6A250778A800C10055 /* PostListView.swift */,
@@ -438,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */,
+				EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -457,6 +462,15 @@
 				EAC0AA63250D095700CD11C3 /* PostDetailView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		EAC0AA65250D0ACB00CD11C3 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0AA66250D0AEE00CD11C3 /* CommentInputView.swift */,
+				EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,17 +632,19 @@
 				EAC0AA60250CFD9800CD11C3 /* UserData.swift in Sources */,
 				EAC0AA64250D095700CD11C3 /* PostDetailView.swift in Sources */,
 				EAC0AA58250CAA8800CD11C3 /* HomeView.swift in Sources */,
-				EA206A67250713C900C10055 /* PostViewModel.swift in Sources */,
 				EA80404E24EA282900D60942 /* SceneDelegate.swift in Sources */,
 				EAC0AA5A250CAE6200CD11C3 /* PostListCategory.swift in Sources */,
 				EA206A6D25078E7800C10055 /* PostImageCell.swift in Sources */,
 				EA206A692507737000C10055 /* PostCellToolBarButton.swift in Sources */,
 				EA206A6425070DFB00C10055 /* Post.swift in Sources */,
+				EAC0AA69250D0EF100CD11C3 /* CommentTextView.swift in Sources */,
 				EA61FCF524EBA07D00C178BD /* PostCell.swift in Sources */,
 				EAC0AA5E250CC1F400CD11C3 /* HScrollViewController.swift in Sources */,
 				EA206A72250791C800C10055 /* PostImageCellRow.swift in Sources */,
+				EAC0AA6B250D179B00CD11C3 /* KeyboardResponder.swift in Sources */,
 				EA206A6B250778A800C10055 /* PostListView.swift in Sources */,
 				EA206A612506886400C10055 /* PostVIPBadge.swift in Sources */,
+				EAC0AA67250D0AEE00CD11C3 /* CommentInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

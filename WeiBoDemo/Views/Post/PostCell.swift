@@ -15,6 +15,8 @@ struct PostCell: View {
         return userData.getPost(forId: post.id)!
     }
     
+    @State var presentComment: Bool = false
+    
     @EnvironmentObject var userData: UserData
     
     var body: some View {
@@ -77,7 +79,10 @@ struct PostCell: View {
                 Spacer()
                 
                 PostCellToolBarButton(image: "message", text: post.commentCountText, color: .black) {
-                    print("Click the comment button.")
+                    self.presentComment.toggle()
+                }
+                .sheet(isPresented: $presentComment) {
+                    CommentInputView(post: post).environmentObject(self.userData) // 模态推出中的View并不会像其他的子View那样能够使用父View的EnvironmentObject,需要自行指定该View的父View的EnvironmentObject（因为不在同级关系中）
                 }
                 
                 Spacer()
