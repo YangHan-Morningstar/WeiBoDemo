@@ -100,7 +100,6 @@
 		EA61FCF524EBA07D00C178BD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA61FCF424EBA07D00C178BD /* PostCell.swift */; };
 		EA80404C24EA282900D60942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA80404B24EA282900D60942 /* AppDelegate.swift */; };
 		EA80404E24EA282900D60942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA80404D24EA282900D60942 /* SceneDelegate.swift */; };
-		EA80405024EA282900D60942 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA80404F24EA282900D60942 /* ContentView.swift */; };
 		EA80405224EA282D00D60942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA80405124EA282D00D60942 /* Assets.xcassets */; };
 		EA80405524EA282D00D60942 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA80405424EA282D00D60942 /* Preview Assets.xcassets */; };
 		EA80405824EA282D00D60942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA80405624EA282D00D60942 /* LaunchScreen.storyboard */; };
@@ -108,6 +107,8 @@
 		EAC0AA58250CAA8800CD11C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA57250CAA8800CD11C3 /* HomeView.swift */; };
 		EAC0AA5A250CAE6200CD11C3 /* PostListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA59250CAE6200CD11C3 /* PostListCategory.swift */; };
 		EAC0AA5E250CC1F400CD11C3 /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */; };
+		EAC0AA60250CFD9800CD11C3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA5F250CFD9800CD11C3 /* UserData.swift */; };
+		EAC0AA64250D095700CD11C3 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA63250D095700CD11C3 /* PostDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,7 +206,6 @@
 		EA80404824EA282900D60942 /* WeiBoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA80404B24EA282900D60942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA80404D24EA282900D60942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA80404F24EA282900D60942 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA80405124EA282D00D60942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA80405424EA282D00D60942 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA80405724EA282D00D60942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -214,6 +214,8 @@
 		EAC0AA57250CAA8800CD11C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EAC0AA59250CAE6200CD11C3 /* PostListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCategory.swift; sourceTree = "<group>"; };
 		EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
+		EAC0AA5F250CFD9800CD11C3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		EAC0AA63250D095700CD11C3 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				EA206A66250713C900C10055 /* PostViewModel.swift */,
+				EAC0AA5F250CFD9800CD11C3 /* UserData.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 		EA206A6E2507913300C10055 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				EAC0AA62250D094500CD11C3 /* Detail */,
 				EA61FCF424EBA07D00C178BD /* PostCell.swift */,
 				EA206A6A250778A800C10055 /* PostListView.swift */,
 				EA206A702507917400C10055 /* Components */,
@@ -390,13 +394,11 @@
 		EA80404A24EA282900D60942 /* WeiBoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EAC0AA61250D030C00CD11C3 /* App */,
 				EAC0AA5C250CC1DB00CD11C3 /* Utils */,
 				EA206A6525070E9700C10055 /* ViewModels */,
 				EA206A6225070DED00C10055 /* Models */,
 				EA61FCF324EBA05500C178BD /* Views */,
-				EA80404B24EA282900D60942 /* AppDelegate.swift */,
-				EA80404D24EA282900D60942 /* SceneDelegate.swift */,
-				EA80404F24EA282900D60942 /* ContentView.swift */,
 				EA2069B92506323000C10055 /* Resources */,
 				EA80405124EA282D00D60942 /* Assets.xcassets */,
 				EA80405624EA282D00D60942 /* LaunchScreen.storyboard */,
@@ -438,6 +440,23 @@
 				EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAC0AA61250D030C00CD11C3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EA80404B24EA282900D60942 /* AppDelegate.swift */,
+				EA80404D24EA282900D60942 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EAC0AA62250D094500CD11C3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0AA63250D095700CD11C3 /* PostDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,13 +615,14 @@
 			files = (
 				EAC0AA56250CA41400CD11C3 /* HomeNavigationBar.swift in Sources */,
 				EA80404C24EA282900D60942 /* AppDelegate.swift in Sources */,
+				EAC0AA60250CFD9800CD11C3 /* UserData.swift in Sources */,
+				EAC0AA64250D095700CD11C3 /* PostDetailView.swift in Sources */,
 				EAC0AA58250CAA8800CD11C3 /* HomeView.swift in Sources */,
 				EA206A67250713C900C10055 /* PostViewModel.swift in Sources */,
 				EA80404E24EA282900D60942 /* SceneDelegate.swift in Sources */,
 				EAC0AA5A250CAE6200CD11C3 /* PostListCategory.swift in Sources */,
 				EA206A6D25078E7800C10055 /* PostImageCell.swift in Sources */,
 				EA206A692507737000C10055 /* PostCellToolBarButton.swift in Sources */,
-				EA80405024EA282900D60942 /* ContentView.swift in Sources */,
 				EA206A6425070DFB00C10055 /* Post.swift in Sources */,
 				EA61FCF524EBA07D00C178BD /* PostCell.swift in Sources */,
 				EAC0AA5E250CC1F400CD11C3 /* HScrollViewController.swift in Sources */,

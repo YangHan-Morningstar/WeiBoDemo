@@ -47,3 +47,19 @@ extension Post {
         }
     }
 }
+
+func loadPostListData(_ fileName: String) -> PostList {
+    guard let url = Bundle.main.url(forResource: fileName, withExtension: nil) else{
+        fatalError("Can not find the \(fileName) in main bundle!")
+    }
+    
+    guard let data = try? Data(contentsOf: url) else {
+        fatalError("Can not load \(url)!")
+    }
+    
+    guard let list = try? JSONDecoder().decode(PostList.self, from: data) else {
+        fatalError("Can not parse post list json data!")
+    }
+    
+    return list
+}
