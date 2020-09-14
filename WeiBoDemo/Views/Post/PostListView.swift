@@ -25,27 +25,11 @@ struct PostListView: View {
         .bb_setupRefreshControl({ control in
             control.attributedTitle = NSAttributedString(string: "加载中")
         })
-        .bb_pullDownToRefresh(isRefreshing: $userData.isRefershing) {
-            print("refershing!")
-            
-            self.userData.loadingError = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Error!"])
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.userData.isRefershing.toggle()
-                self.userData.loadingError = nil
-            }
+        .bb_pullDownToRefresh(isRefreshing: $userData.isRefreshing) {
+            self.userData.refreshPostList(for: self.postListCategory)
         }
         .bb_pullUpToLoadMore(bottomSpace: 30) {
-            if self.userData.isLoadingMore {
-                return
-            }
-            
-            print("loading!")
-            self.userData.isLoadingMore.toggle()
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.userData.isLoadingMore.toggle()
-            }
+            self.userData.loadMorePostList(for: self.postListCategory)
         }
         .overlay (
             Text(self.userData.loadingErrorText)

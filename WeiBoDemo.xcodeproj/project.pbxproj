@@ -113,6 +113,8 @@
 		EAC0AA69250D0EF100CD11C3 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */; };
 		EAC0AA6B250D179B00CD11C3 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */; };
 		EAC0AAB8250FA45000CD11C3 /* OriginalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AAB7250FA45000CD11C3 /* OriginalButtonStyle.swift */; };
+		EAC0AABC250FAE6F00CD11C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AABA250FAE6F00CD11C3 /* NetworkManager.swift */; };
+		EAC0AABD250FAE6F00CD11C3 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AABB250FAE6F00CD11C3 /* NetworkAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +228,8 @@
 		EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
 		EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		EAC0AAB7250FA45000CD11C3 /* OriginalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalButtonStyle.swift; sourceTree = "<group>"; };
+		EAC0AABA250FAE6F00CD11C3 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EAC0AABB250FAE6F00CD11C3 /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,7 +462,8 @@
 		EAC0AA5C250CC1DB00CD11C3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */,
+				EAC0AABE250FAE7F00CD11C3 /* UIKitView */,
+				EAC0AAB9250FAE2200CD11C3 /* Network */,
 				EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */,
 				EAC0AAB7250FA45000CD11C3 /* OriginalButtonStyle.swift */,
 			);
@@ -489,6 +494,23 @@
 				EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */,
 			);
 			path = Comment;
+			sourceTree = "<group>";
+		};
+		EAC0AAB9250FAE2200CD11C3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0AABB250FAE6F00CD11C3 /* NetworkAPI.swift */,
+				EAC0AABA250FAE6F00CD11C3 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EAC0AABE250FAE7F00CD11C3 /* UIKitView */ = {
+			isa = PBXGroup;
+			children = (
+				EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */,
+			);
+			path = UIKitView;
 			sourceTree = "<group>";
 		};
 		EE32E06FCD5E16B7ECECBFA4 /* Pods */ = {
@@ -710,10 +732,12 @@
 				EAC0AAB8250FA45000CD11C3 /* OriginalButtonStyle.swift in Sources */,
 				EA206A6425070DFB00C10055 /* Post.swift in Sources */,
 				EAC0AA69250D0EF100CD11C3 /* CommentTextView.swift in Sources */,
+				EAC0AABC250FAE6F00CD11C3 /* NetworkManager.swift in Sources */,
 				EA61FCF524EBA07D00C178BD /* PostCell.swift in Sources */,
 				EAC0AA5E250CC1F400CD11C3 /* HScrollViewController.swift in Sources */,
 				EA206A72250791C800C10055 /* PostImageCellRow.swift in Sources */,
 				EAC0AA6B250D179B00CD11C3 /* KeyboardResponder.swift in Sources */,
+				EAC0AABD250FAE6F00CD11C3 /* NetworkAPI.swift in Sources */,
 				EA206A6B250778A800C10055 /* PostListView.swift in Sources */,
 				EA206A612506886400C10055 /* PostVIPBadge.swift in Sources */,
 				EAC0AA67250D0AEE00CD11C3 /* CommentInputView.swift in Sources */,
