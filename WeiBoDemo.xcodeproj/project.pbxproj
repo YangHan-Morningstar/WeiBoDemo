@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61402973619AF155807EAAC9 /* Pods_WeiBoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434F00217D55E135267E9411 /* Pods_WeiBoDemo.framework */; };
 		EA206A0D2506323000C10055 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA2069BA2506323000C10055 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */; };
 		EA206A0E2506323000C10055 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA2069BB2506323000C10055 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */; };
 		EA206A0F2506323000C10055 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA2069BC2506323000C10055 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg */; };
@@ -111,9 +112,13 @@
 		EAC0AA67250D0AEE00CD11C3 /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA66250D0AEE00CD11C3 /* CommentInputView.swift */; };
 		EAC0AA69250D0EF100CD11C3 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */; };
 		EAC0AA6B250D179B00CD11C3 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */; };
+		EAC0AAB8250FA45000CD11C3 /* OriginalButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC0AAB7250FA45000CD11C3 /* OriginalButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123277AA94E00ACAE4845971 /* Pods-WeiBoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.release.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		434F00217D55E135267E9411 /* Pods_WeiBoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E42C7D6E2A09E13E43FE21 /* Pods-WeiBoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBoDemo.debug.xcconfig"; path = "Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA2069BA2506323000C10055 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8697cf1ely8gashxj3b09j20u00u040v.jpg; sourceTree = "<group>"; };
 		EA2069BB2506323000C10055 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d0c21786ly1gavj2c0kcej20c8096dh7.jpg; sourceTree = "<group>"; };
 		EA2069BC2506323000C10055 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg; sourceTree = "<group>"; };
@@ -220,6 +225,7 @@
 		EAC0AA66250D0AEE00CD11C3 /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
 		EAC0AA68250D0EF100CD11C3 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
 		EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		EAC0AAB7250FA45000CD11C3 /* OriginalButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,12 +233,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61402973619AF155807EAAC9 /* Pods_WeiBoDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A48BCA0452BB850CEEB989AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				434F00217D55E135267E9411 /* Pods_WeiBoDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA2069B92506323000C10055 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +399,8 @@
 			children = (
 				EA80404A24EA282900D60942 /* WeiBoDemo */,
 				EA80404924EA282900D60942 /* Products */,
+				EE32E06FCD5E16B7ECECBFA4 /* Pods */,
+				A48BCA0452BB850CEEB989AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -443,6 +460,7 @@
 			children = (
 				EAC0AA5D250CC1F400CD11C3 /* HScrollViewController.swift */,
 				EAC0AA6A250D179B00CD11C3 /* KeyboardResponder.swift */,
+				EAC0AAB7250FA45000CD11C3 /* OriginalButtonStyle.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -473,6 +491,15 @@
 			path = Comment;
 			sourceTree = "<group>";
 		};
+		EE32E06FCD5E16B7ECECBFA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2E42C7D6E2A09E13E43FE21 /* Pods-WeiBoDemo.debug.xcconfig */,
+				123277AA94E00ACAE4845971 /* Pods-WeiBoDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,9 +507,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA80405C24EA282D00D60942 /* Build configuration list for PBXNativeTarget "WeiBoDemo" */;
 			buildPhases = (
+				4493AD1B928EA90A755C5F6A /* [CP] Check Pods Manifest.lock */,
 				EA80404424EA282900D60942 /* Sources */,
 				EA80404524EA282900D60942 /* Frameworks */,
 				EA80404624EA282900D60942 /* Resources */,
+				B9A45775D08AB8B18E321381 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -622,6 +651,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4493AD1B928EA90A755C5F6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeiBoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A45775D08AB8B18E321381 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeiBoDemo/Pods-WeiBoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA80404424EA282900D60942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -636,6 +707,7 @@
 				EAC0AA5A250CAE6200CD11C3 /* PostListCategory.swift in Sources */,
 				EA206A6D25078E7800C10055 /* PostImageCell.swift in Sources */,
 				EA206A692507737000C10055 /* PostCellToolBarButton.swift in Sources */,
+				EAC0AAB8250FA45000CD11C3 /* OriginalButtonStyle.swift in Sources */,
 				EA206A6425070DFB00C10055 /* Post.swift in Sources */,
 				EAC0AA69250D0EF100CD11C3 /* CommentTextView.swift in Sources */,
 				EA61FCF524EBA07D00C178BD /* PostCell.swift in Sources */,
@@ -778,6 +850,7 @@
 		};
 		EA80405D24EA282D00D60942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2E42C7D6E2A09E13E43FE21 /* Pods-WeiBoDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -798,6 +871,7 @@
 		};
 		EA80405E24EA282D00D60942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123277AA94E00ACAE4845971 /* Pods-WeiBoDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

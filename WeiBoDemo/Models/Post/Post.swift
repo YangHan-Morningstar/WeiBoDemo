@@ -48,6 +48,12 @@ extension Post {
     }
 }
 
+extension Post: Equatable {
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
 func loadPostListData(_ fileName: String) -> PostList {
     guard let url = Bundle.main.url(forResource: fileName, withExtension: nil) else{
         fatalError("Can not find the \(fileName) in main bundle!")

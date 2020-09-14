@@ -11,6 +11,17 @@ import Combine
 class UserData: ObservableObject {
     @Published var recommandPostList: PostList = loadPostListData("PostListData_recommend_1.json")
     @Published var hotPostList: PostList = loadPostListData("PostListData_hot_1.json")
+    @Published var isRefershing: Bool = false
+    @Published var isLoadingMore: Bool = false
+    @Published var loadingError: Error?
+    
+    var showingLoadingError: Bool {
+        return loadingError != nil
+    }
+    
+    var loadingErrorText: String {
+        return loadingError?.localizedDescription ?? ""
+    }
     
     private var recommandPostDict: [Int: Int] = [:] // id: Index
     private var hotPostDict: [Int: Int] = [:] // id: index
